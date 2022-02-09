@@ -1,7 +1,7 @@
 body {
   font-family: sans-serif;
-  border: 5px solid black;
   font-size: 13px;
+  line-height: 1.4;
 }
 
 h1,
@@ -9,15 +9,32 @@ h3 {
   text-transform: uppercase;
 }
 
+article {
+  border: 5px solid black;
+  margin: 0 auto;
+  width: 80%;
+}
+
 article section h1 {
   background-color: lightgray;
   text-align: center;
+  margin: 0;
+  padding: 10px 10px;
+}
+
+article section h3 {
+  margin: 0;
 }
 
 article section p:first-child {
   text-transform: uppercase;
   color: lightgray;
   font-size: 11px;
+  margin-top: 0;
+}
+
+article section:nth-child(2) {
+  margin-bottom: 20px;
 }
 
 article section p:nth-child(2) {
@@ -26,20 +43,41 @@ article section p:nth-child(2) {
 
 article section a {
   color: black;
+  font-size: 11px;
 }
 
 article section a:hover {
   text-decoration: none;
 }
 
+/* section:last-child div {
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  padding: 10px 0;
+} */
+
 section button {
   text-transform: uppercase;
   color: white;
   background-color: black;
   border: none;
+  font-size: 11px;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  cursor: pointer;
+  border-top: 5px solid black;
+  transition: all 1.5s;
 }
 
 section button:hover {
   color: black;
   background-color: white;
+}
+
+article section:last-child ul {
+  margin: 10px 20px;
+  padding: 0;
+  box-sizing: border-box;
 }
