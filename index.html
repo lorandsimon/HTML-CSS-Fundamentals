@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!-- Not visible elements come here -->
-
+    <link rel="stylesheet" href="/styles.css" />
     <meta charset="UTF-8" />
     <title>Basic Webpaage</title>
   </head>
@@ -32,7 +32,9 @@
           src="/img/laura-jones.jpg"
           alt="picture of the author"
         />
-        <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027.</p>
+        <p id="author">
+          Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027.
+        </p>
         <img
           width="500"
           src="/img/post-img.jpg"
@@ -88,23 +90,23 @@
         <li>
           <img width="100" src="/img/related-1.jpg" alt="programmer" />
           <a href="#">How to learn web development</a>
-          <p>By Jonas Schmedtman</p>
+          <p class="related-author">By Jonas Schmedtman</p>
         </li>
         <li>
           <img width="100" src="/img/related-2.jpg" alt="thunder" />
           <a href="#">The unknown power of CSS</a>
-          <p>By Jim Dilloo</p>
+          <p class="related-author">By Jim Dilloo</p>
         </li>
         <li>
           <img width="100" src="img/related-3.jpg" alt="program code snippet" />
           <a href="#">Why jacascript is awesome</a>
-          <p>By Matilda</p>
+          <p class="related-author">By Matilda</p>
         </li>
       </ul>
     </aside>
 
     <footer>
-      <p>Copyright &copy; 2027 by The Code Magazine.</p>
+      <p id="copyright">Copyright &copy; 2027 by The Code Magazine.</p>
     </footer>
   </body>
 </html>
