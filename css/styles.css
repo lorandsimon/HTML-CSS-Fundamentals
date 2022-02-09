@@ -1,10 +1,11 @@
+body {
+  font-family: sans-serif;
+}
+
 h1,
 h2,
-h3,
-h4,
-p,
-li {
-  font-family: sans-serif;
+h3 {
+  color: #1098ad;
 }
 
 h1 {
@@ -58,4 +59,39 @@ li {
 .related-author {
   font-size: 18px;
   font-weight: bold;
+}
+
+.related {
+  list-style: none;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+}
+
+aside {
+  border: 5px solid #1098ad;
+}
+
+li:first-child,
+li:last-child {
+  font-weight: bold;
+}
+
+li:nth-child(even) {
+  color: red;
+}
+
+a:link {
+  text-decoration: none;
+  color: #1098ad;
+}
+
+a:visited {
+  color: gray;
+}
+
+a:hover {
+  color: orangered;
+  text-decoration: underline dotted orangered;
 }

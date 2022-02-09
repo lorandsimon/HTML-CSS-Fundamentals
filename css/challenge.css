@@ -1,0 +1,45 @@
+body {
+  font-family: sans-serif;
+  border: 5px solid black;
+  font-size: 13px;
+}
+
+h1,
+h3 {
+  text-transform: uppercase;
+}
+
+article section h1 {
+  background-color: lightgray;
+  text-align: center;
+}
+
+article section p:first-child {
+  text-transform: uppercase;
+  color: lightgray;
+  font-size: 11px;
+}
+
+article section p:nth-child(2) {
+  font-size: 11px;
+}
+
+article section a {
+  color: black;
+}
+
+article section a:hover {
+  text-decoration: none;
+}
+
+section button {
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+  border: none;
+}
+
+section button:hover {
+  color: black;
+  background-color: white;
+}
