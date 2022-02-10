@@ -1,11 +1,51 @@
 body {
   font-family: sans-serif;
   margin: 0;
+  position: relative;
+  border-top: 5px solid #1098ad;
 }
+
+/* The inline elements occupies the space they need, block level elements occupies a complete line */
+/* Inline elements can have horizontal margins but vertical not */
+/* Inline block elements occupies just the space they need but the behave like block elements, they can have vertical margins to */
+
+/* Pseudo classes are defined with one : and pseudo elements with two :: */
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 20px;
+}
+
+h2::first-letter {
+  font-size: 60px;
+}
+
+/* Just h3 sibling is sellected */
+
+h3 + p::first-line {
+  color: red;
+}
+
+h2::after {
+  content: "TOP";
+  font-size: 16px;
+  background-color: yellow;
+  padding: 5px 10px;
+  position: absolute;
+  right: -5%;
+  top: -15%;
+  color: black;
+}
+
+h2 {
+  /* background-color: orange; */
+  position: relative;
+}
+
+/* Pseudo elements */
 
 body header h1 {
   margin-top: 0;
-  border-top: 5px solid #1098ad;
 }
 
 .container {
@@ -102,10 +142,35 @@ a:link {
 }
 
 a:visited {
-  color: gray;
+  color: #1098ad;
 }
 
 a:hover {
   color: orangered;
   text-decoration: underline dotted orangered;
+}
+
+.main-header nav a {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.main-header nav a:last-child {
+  margin-right: 0;
+}
+
+nav {
+  text-align: center;
+}
+
+body button {
+  color: rgb(46, 101, 184);
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 15px;
+
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
 }

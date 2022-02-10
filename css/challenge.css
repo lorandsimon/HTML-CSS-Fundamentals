@@ -81,3 +81,76 @@ article section:last-child ul {
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Pseudo element */
+
+h1 {
+  position: relative;
+}
+
+h1::before {
+  content: "SALE";
+  background-color: red;
+  padding: 10px 15px;
+  letter-spacing: 3px;
+  font-size: 11px;
+  position: absolute;
+  left: -5%;
+  top: -45%;
+  color: white;
+  font-weight: bold;
+}
+
+.color-container::before {
+  content: "Available colors: ";
+  margin-right: 10px;
+  margin-left: 5px;
+  font-size: 14px;
+  /* background-color: rgb(193, 195, 194); */
+}
+
+/* Available colors */
+
+.color-container {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 5px 0;
+  /* margin-left: 5px; */
+  display: flex;
+}
+
+.color-container li {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  list-style: none;
+  margin-right: 10px;
+}
+
+.color-container li:last-child {
+  margin-right: 0;
+}
+
+.black-color {
+  background-color: black;
+}
+
+.blue-color {
+  background-color: blue;
+}
+
+.red-color {
+  background-color: red;
+}
+
+.orange-color {
+  background-color: orange;
+}
+
+.green-color {
+  background-color: green;
+}
+
+.brown-color {
+  background-color: brown;
+}
