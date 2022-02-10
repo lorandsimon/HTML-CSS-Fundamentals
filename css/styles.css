@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: sans-serif;
   margin: 0;
@@ -40,6 +44,7 @@ h2::after {
 h2 {
   /* background-color: orange; */
   position: relative;
+  margin: 0;
 }
 
 /* Pseudo elements */
@@ -49,7 +54,7 @@ body header h1 {
 }
 
 .container {
-  width: 80%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -64,6 +69,7 @@ h1 {
   font-size: 26px;
   text-transform: uppercase;
   font-style: italic;
+  margin: 0;
 }
 
 h2 {
@@ -119,6 +125,8 @@ li {
 
 .main-header {
   background-color: #f7f7f7;
+  padding: 20px 0;
+  margin-bottom: 30px;
 }
 
 aside {
@@ -173,4 +181,53 @@ body button {
   position: absolute;
   bottom: 2%;
   right: 2%;
+}
+
+/* Floats */
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.author {
+  float: left;
+  margin-left: 10px;
+}
+
+.clear {
+  clear: both;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+/* Two sides */
+
+article {
+  /* background-color: green; */
+  width: 60%;
+  float: left;
+}
+
+aside {
+  /* background-color: red; */
+  width: 35%;
+  float: right;
+}
+
+footer {
+  /* background-color: aqua; */
+  clear: both;
 }

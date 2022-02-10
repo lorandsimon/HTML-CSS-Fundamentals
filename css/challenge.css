@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: sans-serif;
   font-size: 13px;
@@ -15,7 +19,17 @@ article {
   width: 80%;
 }
 
-article section h1 {
+section {
+  width: 33%;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+section:first-of-type {
+  padding: 0;
+}
+
+header h1 {
   background-color: lightgray;
   text-align: center;
   margin: 0;
@@ -26,16 +40,16 @@ article section h3 {
   margin: 0;
 }
 
-article section p:first-child {
+article section p:first-of-type {
   text-transform: uppercase;
-  color: lightgray;
+  color: rgb(121, 121, 121);
   font-size: 11px;
   margin-top: 0;
 }
 
-article section:nth-child(2) {
+/* article section:nth-child(2) {
   margin-bottom: 20px;
-}
+} */
 
 article section p:nth-child(2) {
   font-size: 11px;
@@ -57,7 +71,7 @@ article section a:hover {
   padding: 10px 0;
 } */
 
-section button {
+footer button {
   text-transform: uppercase;
   color: white;
   background-color: black;
@@ -71,7 +85,7 @@ section button {
   transition: all 1.5s;
 }
 
-section button:hover {
+footer button:hover {
   color: black;
   background-color: white;
 }
@@ -102,7 +116,7 @@ h1::before {
 }
 
 .color-container::before {
-  content: "Available colors: ";
+  content: "Colors: ";
   margin-right: 10px;
   margin-left: 5px;
   font-size: 14px;
@@ -153,4 +167,20 @@ h1::before {
 
 .brown-color {
   background-color: brown;
+}
+
+/* Floats */
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clear {
+  clear: both;
+  content: "";
+  display: block;
 }

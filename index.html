@@ -12,7 +12,7 @@
 
     <!-- Strong and em are used instead of b and i - these are semantic elements. -->
     <div class="container">
-      <header class="main-header">
+      <header class="main-header clearfix">
         <h1>📘 The Code Magazine</h1>
         <nav>
           <a href="/blog.html">Blog</a>
@@ -20,6 +20,7 @@
           <a href="#">Flexbox</a>
           <a href="#">CSS-Grid</a>
         </nav>
+        <div class="clear"></div>
       </header>
 
       <!-- The a and img elements have attributes, attributes = pieces of data that describes the element. -->
@@ -32,15 +33,18 @@
             width="80"
             src="/img/laura-jones.jpg"
             alt="picture of the author"
+            class="author-img"
           />
-          <p id="author">
+          <p id="author" class="author">
             Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027.
           </p>
-          <img
-            width="500"
-            src="/img/post-img.jpg"
-            alt="HTML code on the screen"
-          />
+          <div class="clear">
+            <img
+              width="100%"
+              src="/img/post-img.jpg"
+              alt="HTML code on the screen"
+            />
+          </div>
         </header>
         <p>
           All modern websites and web applications are built using three
