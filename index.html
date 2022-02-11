@@ -17,103 +17,115 @@
         <nav>
           <a href="/blog.html">Blog</a>
           <a href="/challenge.html">Challanges</a>
-          <a href="#">Flexbox</a>
-          <a href="#">CSS-Grid</a>
+          <a href="/flexbox.html">Flexbox</a>
+          <a href="/css-grid.html">CSS-Grid</a>
         </nav>
-        <div class="clear"></div>
+        <!-- <div class="clear"></div> -->
       </header>
 
       <!-- The a and img elements have attributes, attributes = pieces of data that describes the element. -->
-
-      <article>
-        <header>
-          <h2>The basic Language of the Web: HTML.</h2>
-          <!-- Img elements behave like inline-block elements -->
-          <img
-            width="80"
-            src="/img/laura-jones.jpg"
-            alt="picture of the author"
-            class="author-img"
-          />
-          <p id="author" class="author">
-            Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027.
+      <div class="main-container">
+        <article class="main-bar">
+          <header>
+            <h2>The basic Language of the Web: HTML.</h2>
+            <div class="author-container">
+              <!-- Img elements behave like inline-block elements -->
+              <img
+                width="80"
+                src="/img/laura-jones.jpg"
+                alt="picture of the author"
+                class="author-img"
+              />
+              <p id="author" class="author">
+                Posted by <strong>Laura Jones</strong> on Monday, June 21st
+                2027.
+              </p>
+            </div>
+            <div class="clear">
+              <img
+                width="100%"
+                src="/img/post-img.jpg"
+                alt="HTML code on the screen"
+              />
+            </div>
+          </header>
+          <p>
+            All modern websites and web applications are built using three
+            <em>fundamental</em> technologies: HTML, CSS and JavaScript. <br />
+            These are the languages of the web.
           </p>
-          <div class="clear">
-            <img
-              width="100%"
-              src="/img/post-img.jpg"
-              alt="HTML code on the screen"
-            />
-          </div>
-        </header>
-        <p>
-          All modern websites and web applications are built using three
-          <em>fundamental</em> technologies: HTML, CSS and JavaScript. <br />
-          These are the languages of the web.
-        </p>
-        <h3>What is HTML?</h3>
-        <p>
-          HTML stands for hyper text markup language. It`s a markup language
-          that web developers use to structure and describe the content of a
-          webpage (not a programming language).
-        </p>
-        <p>
-          HTML consists of elements that describe different type of content:
-          pharagraphs, links, headings, images, video, etc. Web browsers
-          understand HTML and render HTML code as websites.
-        </p>
-        <p>In HTML each element is made up of 3 parts:</p>
-        <ol>
-          <li>The opening tag.</li>
-          <li>The closing tag.</li>
-          <li>The actual element.</li>
-        </ol>
-        <p>
-          You can learn more at the
-          <a href="#" target="_blank">MDN Web Docs.</a>
-        </p>
-        <h3>Why should you learn HTML?</h3>
-        <p>
-          There are countless reasons for learning the fundamental language of
-          the web. Here are 5 of them:
-        </p>
-        <ul>
-          <li>To be able to use the fundamental web dev language</li>
-          <li>
-            To hand-craft beautiful websites instead of relying on tools like
-            Worpress or Wix
-          </li>
-          <li>To build web applications</li>
-          <li>To impress friends</li>
-          <li>To have fun 😃</li>
-        </ul>
-        <p>Hopefully you learned something new here. See you next time!</p>
-      </article>
+          <h3>What is HTML?</h3>
+          <p>
+            HTML stands for hyper text markup language. It`s a markup language
+            that web developers use to structure and describe the content of a
+            webpage (not a programming language).
+          </p>
+          <p>
+            HTML consists of elements that describe different type of content:
+            pharagraphs, links, headings, images, video, etc. Web browsers
+            understand HTML and render HTML code as websites.
+          </p>
+          <p>In HTML each element is made up of 3 parts:</p>
+          <ol>
+            <li>The opening tag.</li>
+            <li>The closing tag.</li>
+            <li>The actual element.</li>
+          </ol>
+          <p>
+            You can learn more at the
+            <a href="#" target="_blank">MDN Web Docs.</a>
+          </p>
+          <h3>Why should you learn HTML?</h3>
+          <p>
+            There are countless reasons for learning the fundamental language of
+            the web. Here are 5 of them:
+          </p>
+          <ul>
+            <li>To be able to use the fundamental web dev language</li>
+            <li>
+              To hand-craft beautiful websites instead of relying on tools like
+              Worpress or Wix
+            </li>
+            <li>To build web applications</li>
+            <li>To impress friends</li>
+            <li>To have fun 😃</li>
+          </ul>
+          <p>Hopefully you learned something new here. See you next time!</p>
+        </article>
 
-      <aside>
-        <h4>Related posts</h4>
-        <ul class="related">
-          <li>
-            <img width="100" src="/img/related-1.jpg" alt="programmer" />
-            <a href="#">How to learn web development</a>
-            <p class="related-author">By Jonas Schmedtman</p>
-          </li>
-          <li>
-            <img width="100" src="/img/related-2.jpg" alt="thunder" />
-            <a href="#">The unknown power of CSS</a>
-            <p class="related-author">By Jim Dilloo</p>
-          </li>
-          <li>
-            <img
-              width="100"
-              src="img/related-3.jpg"
-              alt="program code snippet"
-            />
-            <a href="#">Why jacascript is awesome</a>
-            <p class="related-author">By Matilda</p>
-          </li>
-        </ul>
-      </aside>
+        <aside class="side-bar">
+          <h4>Related posts</h4>
+          <ul class="related">
+            <li class="related-post">
+              <img width="100" src="/img/related-1.jpg" alt="programmer" />
+              <div>
+                <a href="#" class="related-link"
+                  >How to learn web development</a
+                >
+                <p class="related-author">By Jonas Schmedtman</p>
+              </div>
+            </li>
+            <li class="related-post">
+              <img width="100" src="/img/related-2.jpg" alt="thunder" />
+              <div>
+                <a href="#" class="related-link">The unknown power of CSS</a>
+                <p class="related-author">By Jim Dilloo</p>
+              </div>
+            </li>
+            <li class="related-post">
+              <img
+                width="100"
+                src="img/related-3.jpg"
+                alt="program code snippet"
+              />
+              <div>
+                <a href="#" class="related-link">Why jacascript is awesome</a>
+                <p class="related-author">By Matilda</p>
+              </div>
+            </li>
+          </ul>
+        </aside>
+      </div>
 
       <footer>
         <p id="copyright">Copyright &copy; 2027 by The Code Magazine.</p>

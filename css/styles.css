@@ -51,6 +51,7 @@ h2 {
 
 body header h1 {
   margin-top: 0;
+  margin-left: 30px;
 }
 
 .container {
@@ -161,7 +162,6 @@ a:hover {
 .main-header nav a {
   display: inline-block;
   margin-right: 10px;
-  margin-bottom: 10px;
 }
 
 .main-header nav a:last-child {
@@ -170,6 +170,7 @@ a:hover {
 
 nav {
   text-align: center;
+  margin-right: 30px;
 }
 
 body button {
@@ -183,7 +184,7 @@ body button {
   right: 2%;
 }
 
-/* Floats */
+/* Floats
 
 h1 {
   float: left;
@@ -215,19 +216,76 @@ nav {
 
 /* Two sides */
 
-article {
-  /* background-color: green; */
+/* article {
+  background-color: green;
   width: 60%;
   float: left;
 }
 
 aside {
-  /* background-color: red; */
+  background-color: red;
   width: 35%;
   float: right;
 }
 
 footer {
-  /* background-color: aqua; */
+  background-color: aqua;
   clear: both;
+}  */
+
+/* FLEXBOX */
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-container {
+  display: flex;
+  padding: 20px 0;
+  align-items: center;
+  /* justify-content: space-around; */
+}
+
+.author {
+  margin-left: 10px;
+}
+
+.related {
+  padding: 0 30px;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* padding: 10px 0; */
+  gap: 20px;
+}
+
+.related-link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.related-author {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.main-container {
+  display: flex;
+  gap: 50px;
+}
+
+.main-bar {
+  flex-basis: 70%;
+}
+
+.side-bar {
+  flex-basis: 30%;
+  align-self: flex-start;
 }
